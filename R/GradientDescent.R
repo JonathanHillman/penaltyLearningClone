@@ -20,7 +20,7 @@ y <- data.mat[,58]
 
 #parameter initialization
 step.size <- 0.005
-max.iter <- 300
+max.iter <- 10000
 weight.vec <- rnorm(dim(X)[2])
 
 #accuracy initiliation
