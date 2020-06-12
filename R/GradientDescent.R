@@ -5,7 +5,7 @@ library(sigmoid)
 library(MLmetrics)
 library(ggplot2)
 library(penaltyLearning)
-source("AUMcalcGrad.R")
+source("AUMcalcAreas.R")
 source("ROChange.R")
 
 #import spam data set
@@ -20,7 +20,7 @@ y <- data.mat[,58]
 
 #parameter initialization
 step.size <- 0.005
-max.iter <- 10000
+max.iter <- 300
 weight.vec <- rnorm(dim(X)[2])
 
 #accuracy initiliation
